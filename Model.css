@@ -1,0 +1,88 @@
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+
+body{
+    background:url('./images/project4.jpeg')no-repeat center center/cover;
+    height:100vh;
+    position:relative;
+}
+
+#open-btn{
+    position:absolute;
+    top:70%;
+    left:10%;
+    width:30%;
+    height:20%;
+    font-size:2rem;
+    background:transparent;
+    color:#000;
+    border:solid 2px #fff;
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 0 0 3px #000;
+    transition:.5s;
+    cursor:pointer
+}
+#open-btn:hover{
+    background-color: #ff0000;
+    color:#fff
+}
+#modal{
+    background-color: #000;
+    color:#fff;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    width:20%;
+    height:10%;
+    padding:10px 20px;
+    border-radius: 5px;
+    cursor:pointer;
+    font-size:1.5rem;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    animation-name: animation;
+    animation-duration: .4s;
+
+}
+#close-btn{
+    font-size:30px;
+    cursor:pointer;
+    color:#0000ff;
+}
+#modal-container{
+    display:none;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:1;
+
+}
+@keyframes animation{
+    from{
+        top:-300px;
+        opacity:0;
+    }
+    to{
+        top:50%;
+        opacity:1;
+
+
+    }
+}
+footer {
+    margin-top: 10px;
+    font-size: 20px;
+    color: darkblue;
+    font-weight: bold;
+    position:absolute;
+    top:90%;
+    left:10%;
+}
